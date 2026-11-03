@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lauddin Gazi — personal website, digital portfolio and creative journey.">
+  <title>LAUDDIN | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="header">
+      <a class="brand" href="#home" aria-label="Lauddin home">LAUDDIN<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#home" data-en="Home" data-bn="হোম">Home</a>
+        <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+        <a href="#journey" data-en="Journey" data-bn="যাত্রা">Journey</a>
+        <a href="#projects" data-en="Projects" data-bn="প্রজেক্ট">Projects</a>
+        <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+      </nav>
+      <button class="language-btn" id="languageToggle" aria-label="Change language">বাংলা</button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="pulse"></span><span data-en="WELCOME TO MY PERSONAL WEBSITE" data-bn="আমার ব্যক্তিগত ওয়েবসাইটে স্বাগতম">WELCOME TO MY PERSONAL WEBSITE</span></span>
+          <h1><span data-en="Hello, I'm" data-bn="হ্যালো, আমি">Hello, I'm</span><br><span class="gradient-text">Lauddin Gazi.</span></h1>
+          <p class="hero-lead" data-en="A passionate learner, curious explorer and aspiring digital creator from West Bengal, India." data-bn="আমি পশ্চিমবঙ্গ, ভারতের একজন আগ্রহী শিক্ষার্থী, নতুন কিছু জানতে ভালোবাসি এবং ডিজিটাল কাজ তৈরি করতে পছন্দ করি।">A passionate learner, curious explorer and aspiring digital creator from West Bengal, India.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about" data-en="Discover My Story ↗" data-bn="আমার সম্পর্কে জানুন ↗">Discover My Story ↗</a>
+            <a class="btn btn-quiet" href="mailto:myinboxzone3@gmail.com" data-en="Let's Connect" data-bn="যোগাযোগ করুন">Let's Connect</a>
+          </div>
+          <div class="hero-meta"><span>📍 West Bengal, India</span><span>✦ Always learning</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="photo-card">
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <div class="avatar-icon">👤</div>
+              <strong data-en="Your photo goes here" data-bn="এখানে আপনার ছবি দিন">Your photo goes here</strong>
+              <small data-en="Replace profile.jpg with your picture" data-bn="আপনার ছবি profile.jpg নামে রাখুন">Replace profile.jpg with your picture</small>
+            </div>
+            <img id="profilePhoto" src="profile.jpg" alt="Portrait of Lauddin Gazi" hidden>
+            <span class="photo-tag">LAUDDIN GAZI</span>
+          </div>
+          <div class="float-card float-top">✦ <span data-en="Creative mind" data-bn="সৃজনশীল মন">Creative mind</span></div>
+          <div class="float-card float-bottom">💡 <span data-en="Build. Learn. Grow." data-bn="শিখি। গড়ি। এগিয়ে যাই।">Build. Learn. Grow.</span></div>
+        </div>
+        <a class="scroll-cue" href="#about">SCROLL TO EXPLORE ↓</a>
+      </section>
+
+      <section class="section intro-section" id="about">
+        <div class="section-heading">
+          <span class="section-kicker">01 / <span data-en="ABOUT ME" data-bn="আমার পরিচয়">ABOUT ME</span></span>
+          <h2 data-en="A little about <em>me.</em>" data-bn="আমার সম্পর্কে <em>কিছু কথা।</em>">A little about <em>me.</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-highlight"><span class="big-quote">“</span><p data-en="Curiosity is where every great journey begins." data-bn="কৌতূহল থেকেই প্রতিটি সুন্দর যাত্রার শুরু।">Curiosity is where every great journey begins.</p><span class="highlight-line"></span></div>
+          <div class="about-text">
+            <p data-en="I am Lauddin Gazi, living in West Bengal. I am a passionate learner with a deep interest in exploring new technologies, building digital projects, and continuously acquiring practical skills." data-bn="আমি লাউদ্দিন গাজী, পশ্চিমবঙ্গে থাকি। নতুন প্রযুক্তি সম্পর্কে জানতে, ডিজিটাল প্রজেক্ট তৈরি করতে এবং নিয়মিত ব্যবহারিক দক্ষতা অর্জন করতে আমি খুবই আগ্রহী।">I am Lauddin Gazi, living in West Bengal. I am a passionate learner with a deep interest in exploring new technologies, building digital projects, and continuously acquiring practical skills.</p>
+            <p data-en="I love solving problems through technology and creating functional, creative tools. This website is my personal space on the internet—a place to document my journey, showcase projects, and share what inspires me." data-bn="প্রযুক্তির সাহায্যে সমস্যার সমাধান করতে এবং কার্যকর ও সৃজনশীল টুল তৈরি করতে আমার ভালো লাগে। এই ওয়েবসাইটটি আমার অনলাইন ব্যক্তিগত ঠিকানা—এখানে আমার পথচলা, প্রজেক্ট এবং অনুপ্রেরণার বিষয়গুলো তুলে ধরব।">I love solving problems through technology and creating functional, creative tools. This website is my personal space on the internet—a place to document my journey, showcase projects, and share what inspires me.</p>
+            <div class="mini-facts"><div><b>01</b><span data-en="Keep learning" data-bn="শিখে চলা">Keep learning</span></div><div><b>02</b><span data-en="Think creatively" data-bn="সৃজনশীল চিন্তা">Think creatively</span></div><div><b>03</b><span data-en="Make things useful" data-bn="কাজের জিনিস তৈরি">Make things useful</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey-section" id="journey">
+        <div class="section-heading">
+          <span class="section-kicker">02 / <span data-en="MY MINDSET" data-bn="আমার ভাবনা">MY MINDSET</span></span>
+          <h2 data-en="Learn today. <em>Create tomorrow.</em>" data-bn="আজ শিখি। <em>আগামীকাল গড়ি।</em>">Learn today. <em>Create tomorrow.</em></h2>
+        </div>
+        <div class="journey-cards">
+          <article class="info-card card-purple"><div class="card-icon">🔎</div><span class="card-number">01</span><h3 data-en="Explore" data-bn="অন্বেষণ">Explore</h3><p data-en="Discovering new ideas, tools and technologies with an open mind." data-bn="খোলা মনে নতুন ধারণা, টুল এবং প্রযুক্তি সম্পর্কে জানা।">Discovering new ideas, tools and technologies with an open mind.</p></article>
+          <article class="info-card card-orange"><div class="card-icon">🧩</div><span class="card-number">02</span><h3 data-en="Create" data-bn="তৈরি">Create</h3><p data-en="Turning curiosity into useful projects and creative digital experiences." data-bn="কৌতূহলকে কাজে লাগিয়ে দরকারি প্রজেক্ট ও সৃজনশীল ডিজিটাল অভিজ্ঞতা তৈরি করা।">Turning curiosity into useful projects and creative digital experiences.</p></article>
+          <article class="info-card card-green"><div class="card-icon">🌱</div><span class="card-number">03</span><h3 data-en="Grow" data-bn="এগিয়ে চলা">Grow</h3><p data-en="Learning from every attempt and improving one step at a time." data-bn="প্রতিটি চেষ্টা থেকে শেখা এবং ধাপে ধাপে নিজেকে উন্নত করা।">Learning from every attempt and improving one step at a time.</p></article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <span class="section-kicker">03 / <span data-en="WHAT I DO" data-bn="আমার আগ্রহ">WHAT I DO</span></span>
+          <h2 data-en="Ideas into <em>possibilities.</em>" data-bn="ভাবনা থেকে <em>সম্ভাবনা।</em>">Ideas into <em>possibilities.</em></h2>
+          <p class="section-sub" data-en="A few areas I enjoy exploring. This space can grow as I complete and publish new projects." data-bn="যে কয়েকটি বিষয় নিয়ে কাজ করতে ও জানতে ভালো লাগে। নতুন প্রজেক্ট তৈরি হলে এখানে যোগ করব।">A few areas I enjoy exploring. This space can grow as I complete and publish new projects.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card"><div class="project-art art-one">⌘</div><div class="project-info"><span>01 / DIGITAL</span><h3 data-en="Digital Projects" data-bn="ডিজিটাল প্রজেক্ট">Digital Projects</h3><p data-en="Small experiments and useful tools built with technology." data-bn="প্রযুক্তি দিয়ে তৈরি ছোট পরীক্ষা-নিরীক্ষা ও দরকারি টুল।">Small experiments and useful tools built with technology.</p></div></article>
+          <article class="project-card"><div class="project-art art-two">✳</div><div class="project-info"><span>02 / CREATIVE</span><h3 data-en="Creative Ideas" data-bn="সৃজনশীল ভাবনা">Creative Ideas</h3><p data-en="Exploring fresh concepts and turning inspiration into action." data-bn="নতুন ধারণা খোঁজা এবং অনুপ্রেরণাকে কাজে পরিণত করা।">Exploring fresh concepts and turning inspiration into action.</p></div></article>
+          <article class="project-card"><div class="project-art art-three">⚡</div><div class="project-info"><span>03 / LEARNING</span><h3 data-en="Learning Experiments" data-bn="শেখার পরীক্ষা">Learning Experiments</h3><p data-en="Building practical skills through hands-on learning." data-bn="নিজে হাতে কাজ করে ব্যবহারিক দক্ষতা অর্জন।">Building practical skills through hands-on learning.</p></div></article>
+        </div>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="contact-glow"></div>
+        <span class="section-kicker">04 / GET IN TOUCH</span>
+        <h2 data-en="Have an idea?<br><em>Let's connect.</em>" data-bn="কোনো ভাবনা আছে?<br><em>যোগাযোগ করুন।</em>">Have an idea?<br><em>Let's connect.</em></h2>
+        <p data-en="Thank you for visiting my corner of the web. Feel free to reach out if you'd like to connect or collaborate!" data-bn="আমার ওয়েবসাইটে আসার জন্য ধন্যবাদ। পরিচিত হতে বা একসঙ্গে কাজ করতে চাইলে নির্দ্বিধায় যোগাযোগ করুন!">Thank you for visiting my corner of the web. Feel free to reach out if you'd like to connect or collaborate!</p>
+        <a class="email-link" href="mailto:myinboxzone3@gmail.com">myinboxzone3@gmail.com <span>↗</span></a>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#home">LAUDDIN<span>.</span></a><p>© <span id="year"></span> Lauddin Gazi. <span data-en="Made with curiosity." data-bn="কৌতূহল নিয়ে তৈরি।">Made with curiosity.</span></p><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
