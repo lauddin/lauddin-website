@@ -1,0 +1,48 @@
+const languageToggle = document.getElementById("languageToggle");
+const menuToggle = document.getElementById("menuToggle");
+const nav = document.getElementById("nav");
+let currentLanguage = "en";
+
+if (languageToggle) {
+  languageToggle.addEventListener("click", () => {
+    currentLanguage = currentLanguage === "en" ? "bn" : "en";
+    document.documentElement.lang = currentLanguage;
+    document.body.classList.toggle("bn", currentLanguage === "bn");
+
+    document.querySelectorAll("[data-en][data-bn]").forEach((element) => {
+      element.innerHTML = element.dataset[currentLanguage];
+    });
+
+    languageToggle.textContent = currentLanguage === "en" ? "বাংলা" : "English";
+  });
+}
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+}
+
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+
+const profilePhoto = document.getElementById("profilePhoto");
+const photoPlaceholder = document.getElementById("photoPlaceholder");
+
+function showProfilePhoto() {
+  if (profilePhoto && profilePhoto.naturalWidth > 0) {
+    profilePhoto.hidden = false;
+    if (photoPlaceholder) photoPlaceholder.hidden = true;
+  }
+}
+
+if (profilePhoto) {
+  profilePhoto.addEventListener("load", showProfilePhoto);
+  profilePhoto.addEventListener("error", () => {
+    profilePhoto.hidden = true;
+    if (photoPlaceholder) photoPlaceholder.hidden = false;
+  });
+  showProfilePhoto();
+}
